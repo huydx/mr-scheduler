@@ -1,0 +1,215 @@
+* {
+    font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+html, body {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    font-size: 20px;
+    background: #f0f3f4;
+    color: #333;
+}
+
+.logo {
+    font-style: bold;
+    color: #459e00;
+    position: fixed;
+    top: 15px; right: 15px;
+    font-size: 24px;
+    background: #FFF;
+    padding-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.logo b {
+    color: #FFF;
+    background: #459e00;
+    padding: 5px;
+}
+
+.box {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+.box .content {
+    padding: 50px;
+}
+
+.box .content h1, .box .content p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.box .content h1 {
+    color: #459e00;
+}
+
+.box .content h1 .opt {
+    color: #888;
+}
+
+.box .content h1 b {
+    background: #459e00;
+    padding: 5px 12px 5px 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-right: 5px;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+.box .content input[type=text], .box .content textarea {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 700px;
+    outline: none;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+.box .content textarea {
+    height: 200px;
+    resize: none;
+}
+
+.date-select {
+    display: flex;
+    flex-direction: row;
+}
+
+.cal {
+    margin-top: 10px;
+  display: block;
+  flex-basis: 406px;
+  background: #FFF;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.cal a {
+  text-decoration: none;
+}
+.cal caption {
+  display: block;
+  line-height: 32px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  background: #459e00;
+}
+.cal caption a {
+  display: block;
+  line-height: 32px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #FFF;
+}
+.cal caption a:hover {
+  color: white;
+}
+.cal caption .prev {
+  float: left;
+}
+.cal caption .next {
+  float: right;
+}
+.cal th, .cal td {
+  width: 58px;
+  text-align: center;
+  margin: 0; padding: 0;
+}
+.cal th {
+  line-height: 20px;
+  font-size: 12px;
+  color: #696969;
+  text-transform: uppercase;
+}
+.cal td {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0; margin: 0;
+}
+.cal td a {
+  clear: both;
+  display: block;
+  position: relative;
+  width: 55px;
+  line-height: 28px;
+  color: #666;
+  padding: 0; margin: 0;
+}
+.cal td a:hover, .cal td.off a {
+  background: #f3f3f3;
+}
+.cal td.off a {
+  color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+  color: #FFF;
+  background: #459e00;
+}
+
+.selected-date-list {
+    flex: 1;
+    margin: 0;
+    padding: 5px 5px 5px 25px;
+    list-style: none;
+}
+
+.selected-date-list li {
+    margin-bottom: 5px;
+}
+
+.selected-date-list li::after {
+    display: block;
+    content: ".";
+    visibility: hidden;
+}
+
+.selected-date-list li span {
+    display: inline;
+    float: left;
+}
+
+.selected-date-list li button {
+    display: inline;
+    float: right;
+    background: #e74c3c;
+    color: #FFF;
+    width: 24px; height: 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.box .content .button-main {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    width: 600px;
+    margin: 20px auto;
+    background: #459e00;
+    border: 2px solid #459e00;
+    color: #FFF; cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.box .content .button-main:hover {
+    background: #FFF;
+    border: 2px solid #459e00;
+    color: #459e00;
+}
