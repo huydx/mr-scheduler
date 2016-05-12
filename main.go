@@ -24,7 +24,9 @@ func LandingHandler(g *gin.Context) {
 	d := NewDbHandler("localhost")
 	e := &(Event{"2222", "fooo"})
 	d.SetEvent(e)
-	g.HTML(http.StatusOK, "landing.tmpl", gin.H{})
+	g.HTML(http.StatusOK, "landing.tmpl", gin.H{
+		"hash": "213132313",
+	})
 }
 
 func MemoGetHandler(g *gin.Context) {
